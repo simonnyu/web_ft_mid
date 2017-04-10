@@ -1,0 +1,240 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.wrap{
+}
+.header{
+	position: relative;
+}
+.tools{
+	position: relative;
+	height: auto;
+	width: 100%;
+	margin: auto 0;
+	opacity: 0.9;
+
+}
+.logo{
+	position: absolute;
+	left: 100px;
+	top: 8px;
+	height: 20%;
+	width: 20%;
+}
+.menu{
+	font-family: impact;
+	width: 800px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index:0;
+}
+.menu li{
+	font-size: 22px;
+  	float: left;
+}
+.menu li a{
+	display: block;
+	list-style:none;
+	margin: 50px 10px 10px 10px;
+	padding: 10px 10px;
+	color:white;
+	font-size: 100%;
+	text-decoration:none;
+}
+.menu li a:hover{
+	
+	background: orange;
+}
+
+.socialsite{
+	width: auto;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index:1;
+	margin-right: 28px;
+
+}
+.socialsite img{
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin: 10px;
+}
+.slogan{
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	font-family: impact;
+	font-size: 50px;
+	color: #FFFF66;
+}
+.slogan span{
+	font-size: 35px;
+	font-family: impact;
+}
+.promo{
+	position: relative;
+	/*margin: 20px 0px 20px 0px;*/
+	
+}
+h2{
+	background: orange;
+	text-align: center;
+	font-size: 35px;
+	font-family: impact;
+	border: 3px black solid;
+	/*margin-bottom: 30px;*/
+	padding: 10px ;
+}
+.words{
+	float: left;
+}
+.promopic img{
+	height: auto;
+	width: 100%;
+	margin: auto 0;
+	opacity: 0.9;
+}
+h3{
+	float: left;
+	font-family: impact;
+	position: absolute;
+	font-size: 40px;
+	color: white;
+	right: 200px;
+	top:110px;
+	line-height: 60px;
+}
+.product{
+	/*margin: 20px 0px 20px 0px;*/
+	background: #d3d3d3;
+}
+.button{
+	font-family: impact;
+	border: 5px white solid;
+	color: orange;
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	width:120px;
+	height: 40px;
+}
+.button:hover {
+	background: orange;
+	color: black;
+}
+.item{
+	height: auto;
+	width:100%;
+	margin:30px 0px; 
+}
+.item img{
+	float: left;
+	height: 350px;
+	width: 350px;
+	margin: 0px 20px 60px 70px;
+	
+}
+.item img:hover{
+	box-shadow: 10px 10px 5px #888888;
+}
+.footer{
+	margin: auto 0;
+	background: #d3d3d3;
+}
+.mail p{
+	float: left;
+	font-family: impact;
+	font-size: 45px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+.mail span{
+	font-size: 30px;
+}
+.mail{
+	margin: 40px 40px 0px 40px;
+}
+.text{
+	font-size: 40px;
+	float: left;
+	border: 3px solid #2F4F4F;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 60px;
+	margin-left: 20px;
+}
+.signup{
+	font-family: impact;
+	font-size: 35px;
+	border: 3px #2F4F4F solid;
+	float: left;
+	margin-left: 20px;
+	color: #2F4F4F;
+	padding: 15px 15px 15px 15px;
+	text-align: center;
+	line-height:30px
+}
+.signup:hover{
+	color: orange;
+	background: #2F4F4F	;
+}
+.editor{
+	background: white;
+	font-size: 16px; 
+	font-family: Garamond;
+	text-align: center;
+	line-height: 25px;
+	margin-top: 30px;
+}
+.clear{
+  clear: both
+}
