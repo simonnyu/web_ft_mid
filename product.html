@@ -4,30 +4,30 @@
 	<meta charset="UTF-8">
 	<title>E-KIA</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 <body>
-	<div class="wrap">
 		<div class="header">
-				<img class="tools" src="images/tools.jpg" alt="">
-				<div class="nav">
-					<img class="logo" src="images/logo.png">
-					<div class="socialsite">
-						<a href="#"><img  src="images/tweeter.png" alt=""></a>
-						<a href="#"><img  src="images/facebook.png" alt=""></a>
-						<a href="#"><img  src="images/instagram.png" alt=""></a>
-					</div>
-					<div class="menu">
-						<ul>
-							<li><a href="/">HOME</a></li>
-							<li><a href="#">PRODUCT</a></li>
-							<li><a href="#">PROMOTION</a></li>
-							<li><a href="#">BLOGS</a></li>
-							<li><a href="#">BECOME A RETAILER</a></li>
-							<li><a href="#">ABOUT US</a></li>
-						</ul>
-					</div>
+			<img class="logo" src="images/logo.png">
+			<div class="nav">
+				<div class="socialsite">
+					<ul>
+						<li><a href="#"><img  src="images/tweeter.png" alt=""></a></li>
+						<li><a href="#"><img  src="images/facebook.png" alt=""></a></li>
+						<li><a href="#"><img  src="images/instagram.png" alt=""></a></li>
+					</ul>
 				</div>
-				<div class="clear"></div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="product.html">PRODUCT</a></li>
+						<li><a href="product_info.html">PROMOTION</a></li>
+						<li><a href="#">BLOGS</a></li>
+						<li><a href="#">BECOME A RETAILER</a></li>
+						<li><a href="#">ABOUT US</a></li>
+					</ul>
+				</div>
+			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="content">
@@ -35,37 +35,125 @@
 				<ul id="catList">
 					<li><a href="#">LIVING ROOM</a></li>
 					<li><a href="#">BEDROOM</a></li>
-					<li class="faCat">BATH
-						<ul>
+					<li onmouseover="showBath()" onmouseout="hideBath()"><a href="#">BATH</a>
+						<ul id="bathCat">
 							<li><a href="#">SINK</a></li>
 							<li><a href="#">FAUCET</a></li>
-							<li><a href="#">BATHROOM<br/>MIRRORS</a></li>
+							<li><a href="#">BATHROOM MIRRORS</a></li>
 						</ul>
 					</li>
 					<li><a href="#">KITCHEN</a></li>
+					<li><a href="#">BABY & KIDS</a></li>
+					<li><a href="#">BACK TO COLLEGE</a></li>
+					<li><a href="#">IDEAS</a></li>
 				</ul>
 			</div>
 			<div id="contRight">
-				<ul class="productList">
-					<li>
-						<a href="#"><img class="productPrev" src="images/top1.jpg"></a>
-						<p class="rank">9.0</p>
-					</li>
-					<li>
-						<a href="#"><img class="productPrev" src="images/top1.jpg"></a>
-						<p class="rank">8.7</p>
-					</li>
-					<li>
-						<a href="#"><img class="productPrev" src="images/top1.jpg"></a>
-						<p class="rank">8.0</p>
-					</li>
-					<li><a href="#"><img class="productPrev" src="images/top2.jpg"></a></li>
-					<li><a href="#"><img class="productPrev" src="images/top2.jpg"></a></li>
-					<li><a href="#"><img class="productPrev" src="images/top2.jpg"></a></li>
-					<li><a href="#"><img class="productPrev" src="images/top3.jpg"></a></li>
-					<li><a href="#"><img class="productPrev" src="images/top3.jpg"></a></li>
-					<li><a href="#"><img class="productPrev" src="images/top3.jpg"></a></li>
-				</ul>
+				<div class="product">
+					<ul class="productList">
+						<li>
+							<a href="#">
+								<img class="productPrev" src="images/top1.jpg">
+								<p class="rank">9.0</p>
+								<div class="detail">
+									<p class="productName">珍珠白餐廳桌椅組</p>
+									<p class="productPrice">14,200元</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="productPrev" src="images/top1.jpg">
+								<p class="rank">8.7</p>
+								<div class="detail">
+									<p class="productName">珍珠白餐廳桌椅組</p>
+									<p class="productPrice">14,200元</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="productPrev" src="images/top1.jpg">
+								<p class="rank">8.0</p>
+								<div class="detail">
+									<p class="productName">珍珠白餐廳桌椅組</p>
+									<p class="productPrice">14,200元</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="productPrev" src="images/top2.jpg">
+								<p class="rank">9.0</p>
+								<div class="detail">
+									<p class="productName">雅典室內吊燈</p>
+									<p class="productPrice">2,000元</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="productPrev" src="images/top2.jpg">
+								<p class="rank">9.0</p>
+								<div class="detail">
+									<p class="productName">雅典室內吊燈</p>
+									<p class="productPrice">2,000元</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="productPrev" src="images/top2.jpg">
+								<p class="rank">9.0</p>
+								<div class="detail">
+									<p class="productName">雅典室內吊燈</p>
+									<p class="productPrice">2,000元</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="productPrev" src="images/top3.jpg">
+								<p class="rank">9.0</p>
+								<div class="detail">
+									<p class="productName">英式下午茶杯具組</p>
+									<p class="productPrice">1,299元</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="productPrev" src="images/top3.jpg">
+								<p class="rank">9.0</p>
+								<div class="detail">
+									<p class="productName">英式下午茶杯具組</p>
+									<p class="productPrice">1,299元</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="productPrev" src="images/top3.jpg">
+								<p class="rank">9.0</p>
+								<div class="detail">
+									<p class="productName">英式下午茶杯具組</p>
+									<p class="productPrice">1,299元</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<div class="page">
+					<ul class="pageList">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+					</ul>
+				</div>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -77,11 +165,18 @@
 				<a href="#"><div class="signup">SIGN UP</div></a>
 				<div class="clear"></div>
 			</div>
-			<div class="editor">
+<!-- 			<div class="editor">
 				<p>2017 EKIA corporate</p>
 				<span style="color:#33CCFF ">Online website</span> by Simon Winnie Peter</p>
-			</div>
+			</div> -->
 		</div>
-	</div>
+	<script type="text/javascript">
+		function showBath(){
+			$('#bathCat').css('display','block');
+		}
+		function hideBath(){
+			$('#bathCat').css('display','none');
+		}
+	</script>
 </body>
 </html>
