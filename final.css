@@ -46,6 +46,9 @@ a{
 	text-decoration: none;
 	color: black;
 }
+body{
+	font-family: impact, Microsoft JhengHei;
+}
 .clear{
 	clear: both;
 }
@@ -53,10 +56,20 @@ a{
 {
 	width: auto;
 }
+.header_index{
+	position: relative;
+}
 .header{
 	position: relative;
     background: linear-gradient(#9ABDE0,#0ABDE0);
 	height:150px;
+}
+.tools{
+	position: relative;
+	height: auto;
+	width: 100%;
+	margin: auto 0;
+	opacity: 0.9;
 }
 .nav{
 	position: relative;
@@ -71,6 +84,30 @@ a{
 	top: 8px;
 	height: auto;
 	width: 258px;
+}
+.menu_index{
+	width: 800px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index:0;
+}
+.menu_index li{
+	font-size: 22px;
+  	float: left;
+}
+.menu_index li a{
+	display: block;
+	list-style:none;
+	margin: 50px 10px 10px 10px;
+	padding: 10px 10px;
+	color:white;
+	font-size: 100%;
+	text-decoration:none;
+}
+.menu_index li a:hover{
+	
+	background: orange;
 }
 .socialsite{
 /*	position: absolute;
@@ -88,6 +125,161 @@ a{
 	height: 25px;
 	float: left;
 	margin: 10px;
+}
+.socialsite_index{
+	width: auto;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index:1;
+	margin-right: 28px;
+
+}
+.socialsite_index img{
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin: 10px;
+}
+.slogan{
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	font-size: 50px;
+	color: #FFFF66;
+}
+.slogan span{
+	font-size: 35px;
+}
+.promo{
+	position: relative;
+	/*margin: 20px 0px 20px 0px;*/
+	
+}
+.h2_index{
+	background: orange;
+	text-align: center;
+	font-size: 35px;
+	border: 3px black solid;
+	/*margin-bottom: 30px;*/
+	padding: 10px ;
+}
+
+.words{
+	float: left;
+}
+.promopic {
+	height: auto;
+	width: 100%;
+	margin: auto 0;
+	opacity: 0.9;
+}
+h3{
+	float: left;
+	position: absolute;
+	font-size: 40px;
+	color: white;
+	right: 200px;
+	top:110px;
+	line-height: 60px;
+}
+
+.button_index{
+	border: 5px white solid;
+	color: orange;
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	width:120px;
+	height: 40px;
+}
+.button_index:hover {
+	background: orange;
+	color: black;
+}
+
+.item{
+	position: relative;
+	height: auto;
+	width:100%;
+	margin:30px 0px 30px 80px; 
+}
+.product{
+	text-align: center;
+	background-color: #d3d3d3;
+}
+.content{
+	margin: auto;
+	width: 95vw;
+	position: relative;
+}
+.productPrev{
+	position: relative;
+	height: 24vw;
+	width: 24vw;
+	
+}
+.productList ul{
+	display: inline-block;
+	height: 24vw;
+	width: 24vw;
+	margin: 10px;
+	list-style-type: none;
+	position: relative;
+}
+.productList li{
+	display: inline-block;
+	height: 24vw;
+	width: 24vw;
+	margin: 20px 40px;
+	list-style-type: none;
+	position: relative;
+}
+.rank_index{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 20px;
+	color: black;
+	background: #FFC0A4;
+	padding: 10px;
+	border-radius: 10%;
+}
+.detail{
+	position: absolute;
+	height: 15%;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	left: 0;
+	bottom: 0;
+}
+.productName{
+	position: absolute;
+	font-size: 20px;
+	left: 10px;
+	bottom: 10px;
+	color: white;
+	padding: 5px;
+	z-index: 1;
+}
+.productPrice{
+	position: absolute;	
+	font-size: 20px;
+	right: 10px;
+	bottom: 10px;
+	color: white;
+	padding: 5px;
+	z-index: 1;
+}
+.productPrev{
+	height: 24vw;
+	width: 24vw;
+}
+.productList li:hover{
+	box-shadow: 10px 10px 5px #888888;
 }
 .menu{
 /*	position: absolute;
@@ -114,6 +306,15 @@ a{
 	
 	background: #0ABDA0;
 }
+#contLeft{
+	float: left;
+	width: 15vw;
+}
+#contRight{
+	float: left;
+	width: 80vw;
+	position: relative;
+}
 #catList li{
 	margin: 10px 20px;
 	padding: 10px;
@@ -138,19 +339,82 @@ a{
 #bathCat a{
 	font-size: 16px;
 }
-.content{
+.product{
+	text-align: center;
+}
+.productList li{
+	display: inline-block;
+	height: 24vw;
+	width: 24vw;
+	margin: 10px;
+	background: green;
+	list-style-type: none;
+	position: relative;
+}
+.rank{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	color: black;
+	background: yellow;
+	padding: 5px;
+	border-radius: 20%;
+}
+.detail{
+	position: absolute;
+	height: 15%;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	left: 0;
+	bottom: 0;
+}
+.productName{
+	position: absolute;
+	font-size: 20px;
+	left: 10px;
+	bottom: 10px;
+	color: white;
+	padding: 5px;
+	z-index: 1;
+}
+.productPrice{
+	position: absolute;	
+	font-size: 20px;
+	right: 10px;
+	bottom: 10px;
+	color: white;
+	padding: 5px;
+	z-index: 1;
+}
+.productPrev{
+	height: 24vw;
+	width: 24vw;
+}
+.productList li:hover{
+	box-shadow: 10px 10px 5px #888888;
+}
+.page{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.pageList ul{
 	margin: auto;
-	width: 95vw;
-	position: relative;
 }
-#contLeft{
-	float: left;
-	width: 15vw;
+.pageList li{
+	display: inline;
+	
 }
-#contRight{
-	float: left;
-	width: 80vw;
-	position: relative;
+.pageList a{
+	display: inline-block;
+	padding: 12px;
+	margin: 5px;
+}
+.pageList a:hover{
+	background: orange;
 }
 .content-product{
 	height: 500px;
@@ -260,7 +524,7 @@ a{
 .product-add{
 	margin-top: 30px;
 }
-input[type="text"]{
+.product-quantity input[type="text"]{
 	padding:10px 15px; 
 	border-top: 2px #828282 solid;
 	border-left: 2px #828282 solid;
@@ -320,7 +584,7 @@ input[type="text"]{
 	background: white;
 	padding-top:20px;
 }
-h2{
+.h2_info{
 	font-size: 50px;
 	font-family: 微軟正黑體;
 	color: #0ABDA0;
@@ -328,7 +592,7 @@ h2{
 	font-weight: bold;
 }
 .customer-data hr{
-	width:100%;
+	width:98%;
 	
 }
 .customer-data{
@@ -342,6 +606,12 @@ h2{
 	font-family: 微軟正黑體; 
 	text-align: center; 
 	
+}
+.customer-data input[type="text"]{
+	width: 100px;
+	height: 75px;
+	position:relative;
+	bottom:36px; 
 }
 .username{
 	width: 160px;
@@ -388,7 +658,7 @@ h2{
 	padding: 10px;
 	position: absolute;
 	left: 90%;
-
+	
 }
 .customer-score p{
 	font-size: 24px;
@@ -402,8 +672,8 @@ h2{
 	color:  #0ABDA0;
 	font-size: 28px; 
 	font-weight:bold; 
+	margin-bottom:15px; 
 }
-
 .footer{
 	margin: auto 0;
 	background: #d3d3d3;
@@ -430,7 +700,8 @@ h2{
 	font-size: 30px;
 }
 .mail{
-	margin: 40px 40px 0px 40px;
+	margin: 40px 40px 0px 300px;
+	
 }
 .text{
 	font-size: 40px;
@@ -441,6 +712,7 @@ h2{
 	padding-top: 10px;
 	padding-right: 60px;
 	margin-left: 20px;
+
 }
 .signup{
 	font-family: impact;
@@ -465,5 +737,3 @@ h2{
 	line-height: 25px;
 	margin-top: 30px;
 }
-
-
