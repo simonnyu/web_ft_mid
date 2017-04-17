@@ -125,7 +125,7 @@ a{
 #catList a{
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-size: 24px;
+	font-size: 22px;
 	display: block;
 
 }
@@ -142,7 +142,7 @@ a{
 }
 #contLeft{
 	float: left;
-	width: 15%;
+	width: 15vw;
 }
 #contRight{
 	float: left;
