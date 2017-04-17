@@ -168,6 +168,9 @@ h2{
 #bathCat {
 	display: none;
 }
+#bathCat a{
+	font-size: 16px;
+}
 .product{
 	text-align: center;
 }
